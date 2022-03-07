@@ -90,6 +90,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.7.0):
     - GoogleUtilities/Logger
+  - Hero (1.6.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -100,6 +101,7 @@ PODS:
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/RemoteConfig
+  - Hero
 
 SPEC REPOS:
   trunk:
@@ -113,6 +115,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
+    - Hero
     - nanopb
     - PromisesObjC
 
@@ -127,9 +130,10 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: aa3cb422fab2b05d2efac543a5720d1a85b9dea5
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: 06ee2eb9362f41383627c99e8f73f0d688517da9
+PODFILE CHECKSUM: f44b751312560ee05c9559314ec9a0f1d9d526a3
 
 COCOAPODS: 1.11.2

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,12 @@
 		7C8B9F4027D408AD00230E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8B9F3E27D408AD00230E4D /* LaunchScreen.storyboard */; };
 		7C8B9F5027D4175400230E4D /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B9F4F27D4175400230E4D /* NetworkMonitor.swift */; };
 		7C8B9F5427D5524F00230E4D /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B9F5327D5524F00230E4D /* SplashVC.swift */; };
+		7C8B9F5727D682EE00230E4D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C8B9F5627D682EE00230E4D /* GoogleService-Info.plist */; };
+		7C8B9F5927D6901400230E4D /* MovieSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8B9F5827D6901400230E4D /* MovieSearch.storyboard */; };
+		7C8B9F5B27D6916500230E4D /* Delay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B9F5A27D6916500230E4D /* Delay.swift */; };
+		7C8B9F5D27D692F600230E4D /* MovieSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B9F5C27D692F600230E4D /* MovieSearchVC.swift */; };
+		7C8B9F5F27D694C200230E4D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B9F5E27D694C200230E4D /* BaseViewController.swift */; };
+		7C8B9F6127D69FA300230E4D /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8B9F6027D69FA300230E4D /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +38,12 @@
 		7C8B9F4127D408AD00230E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C8B9F4F27D4175400230E4D /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		7C8B9F5327D5524F00230E4D /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		7C8B9F5627D682EE00230E4D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7C8B9F5827D6901400230E4D /* MovieSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MovieSearch.storyboard; sourceTree = "<group>"; };
+		7C8B9F5A27D6916500230E4D /* Delay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delay.swift; sourceTree = "<group>"; };
+		7C8B9F5C27D692F600230E4D /* MovieSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchVC.swift; sourceTree = "<group>"; };
+		7C8B9F5E27D694C200230E4D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7C8B9F6027D69FA300230E4D /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		CA27E443BBBB97E5C651AB8F /* Pods-MovieResearchApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieResearchApp.release.xcconfig"; path = "Target Support Files/Pods-MovieResearchApp/Pods-MovieResearchApp.release.xcconfig"; sourceTree = "<group>"; };
 		F940F20A50CBBC6EFABFED2B /* Pods-MovieResearchApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieResearchApp.debug.xcconfig"; path = "Target Support Files/Pods-MovieResearchApp/Pods-MovieResearchApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,7 +66,6 @@
 				F940F20A50CBBC6EFABFED2B /* Pods-MovieResearchApp.debug.xcconfig */,
 				CA27E443BBBB97E5C651AB8F /* Pods-MovieResearchApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -111,6 +122,7 @@
 			children = (
 				7C8B9F3627D408AC00230E4D /* Main.storyboard */,
 				7C8B9F3E27D408AD00230E4D /* LaunchScreen.storyboard */,
+				7C8B9F5827D6901400230E4D /* MovieSearch.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -120,6 +132,8 @@
 			children = (
 				7C8B9F3427D408AC00230E4D /* ViewController.swift */,
 				7C8B9F5327D5524F00230E4D /* SplashVC.swift */,
+				7C8B9F5C27D692F600230E4D /* MovieSearchVC.swift */,
+				7C8B9F5E27D694C200230E4D /* BaseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,6 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				7C8B9F4F27D4175400230E4D /* NetworkMonitor.swift */,
+				7C8B9F5A27D6916500230E4D /* Delay.swift */,
+				7C8B9F6027D69FA300230E4D /* Environment.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -135,6 +151,7 @@
 		7C8B9F4C27D40CE600230E4D /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				7C8B9F5627D682EE00230E4D /* GoogleService-Info.plist */,
 				7C8B9F3027D408AC00230E4D /* AppDelegate.swift */,
 				7C8B9F4127D408AD00230E4D /* Info.plist */,
 				7C8B9F3227D408AC00230E4D /* SceneDelegate.swift */,
@@ -225,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C8B9F4027D408AD00230E4D /* LaunchScreen.storyboard in Resources */,
+				7C8B9F5727D682EE00230E4D /* GoogleService-Info.plist in Resources */,
+				7C8B9F5927D6901400230E4D /* MovieSearch.storyboard in Resources */,
 				7C8B9F3D27D408AD00230E4D /* Assets.xcassets in Resources */,
 				7C8B9F3827D408AC00230E4D /* Main.storyboard in Resources */,
 			);
@@ -283,8 +302,12 @@
 				7C8B9F3127D408AC00230E4D /* AppDelegate.swift in Sources */,
 				7C8B9F5027D4175400230E4D /* NetworkMonitor.swift in Sources */,
 				7C8B9F3327D408AC00230E4D /* SceneDelegate.swift in Sources */,
+				7C8B9F5B27D6916500230E4D /* Delay.swift in Sources */,
+				7C8B9F5F27D694C200230E4D /* BaseViewController.swift in Sources */,
 				7C8B9F3B27D408AC00230E4D /* MovieResearchApp.xcdatamodeld in Sources */,
 				7C8B9F5427D5524F00230E4D /* SplashVC.swift in Sources */,
+				7C8B9F5D27D692F600230E4D /* MovieSearchVC.swift in Sources */,
+				7C8B9F6127D69FA300230E4D /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

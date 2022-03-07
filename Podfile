@@ -7,5 +7,6 @@ target 'MovieResearchApp' do
 
   pod 'Firebase/Core'
   pod 'Firebase/RemoteConfig'
+  pod 'Hero'
 
 end
