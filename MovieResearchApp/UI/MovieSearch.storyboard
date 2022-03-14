@@ -16,9 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="c7S-sq-s0h">
+                            <searchBar contentMode="redraw" placeholder="Search Movie.." translatesAutoresizingMaskIntoConstraints="NO" id="c7S-sq-s0h">
                                 <rect key="frame" x="0.0" y="44" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="KLG-JH-1ko"/>
+                                </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cin-Ga-Hfu">
                                 <rect key="frame" x="0.0" y="95" width="414" height="767"/>
@@ -33,6 +36,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="nW2-DM-6rx"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="ljt-Gt-eDi"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -47,10 +54,14 @@
                             <constraint firstItem="c7S-sq-s0h" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="mYy-bQ-JZ4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movieSearchBar" destination="c7S-sq-s0h" id="hWn-EM-wXB"/>
+                        <outlet property="movieSearchTableView" destination="cin-Ga-Hfu" id="lSB-DN-GRi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="84" y="57"/>
+            <point key="canvasLocation" x="-145" y="54"/>
         </scene>
     </scenes>
     <resources>

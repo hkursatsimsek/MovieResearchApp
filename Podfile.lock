@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (5.5.0)
   - Firebase/Core (8.11.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (~> 8.11.0)
@@ -91,6 +92,10 @@ PODS:
   - GoogleUtilities/UserDefaults (7.7.0):
     - GoogleUtilities/Logger
   - Hero (1.6.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
@@ -102,9 +107,11 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/RemoteConfig
   - Hero
+  - Moya (~> 15.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Firebase
     - FirebaseABTesting
     - FirebaseAnalytics
@@ -116,10 +123,12 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - Hero
+    - Moya
     - nanopb
     - PromisesObjC
 
 SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   Firebase: 44dd9724c84df18b486639e874f31436eaa9a20c
   FirebaseABTesting: aac00a5472250a45f1462675792030e44df025c7
   FirebaseAnalytics: 4e4b13031034e6561ed3bd1d47b6fdabbd6487c6
@@ -131,9 +140,10 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
-PODFILE CHECKSUM: f44b751312560ee05c9559314ec9a0f1d9d526a3
+PODFILE CHECKSUM: c09e9ae19894e8bcacbf4a75603682ac99931d30
 
 COCOAPODS: 1.11.2

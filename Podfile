@@ -8,5 +8,6 @@ target 'MovieResearchApp' do
   pod 'Firebase/Core'
   pod 'Firebase/RemoteConfig'
   pod 'Hero'
+  pod 'Moya', '~> 15.0'
 
 end

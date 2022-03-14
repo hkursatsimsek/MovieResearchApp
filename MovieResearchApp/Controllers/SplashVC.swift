@@ -19,6 +19,8 @@ class SplashVC: BaseViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
         if NetworkMonitor.shared.isConnected {
             setupRemoteConfigDefaults()
             fetchRemoteConfig()
