@@ -9,5 +9,6 @@ target 'MovieResearchApp' do
   pod 'Firebase/RemoteConfig'
   pod 'Hero'
   pod 'Moya', '~> 15.0'
+  pod 'Kingfisher', '~> 5.0'
 
 end
