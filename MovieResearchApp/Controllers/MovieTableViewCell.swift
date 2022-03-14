@@ -8,7 +8,7 @@
 import UIKit
 
 class MovieTableViewCell: UITableViewCell {
-    @IBOutlet weak var moviePoster: UIImageView!
+    @IBOutlet weak var moviePoster: ImageviewDownloader!
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieType: UILabel!
 
@@ -26,7 +26,6 @@ class MovieTableViewCell: UITableViewCell {
     func setCell(movie:Movie) {
         movieTitle.text = movie.title
         movieType.text = movie.type
-        // image cagırılacak
+        moviePoster.getImage(urlString: movie.poster, placeholder: UIImage(named: "posterPlaceholder"))
     }
-
 }
