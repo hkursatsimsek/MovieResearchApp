@@ -10,7 +10,7 @@ import Moya
 
 enum API {
     case getMovie(_ movieID: String)
-    case searchMovie(_ query: String)
+    case searchMovie(_ query: String, _ pageIndex: Int)
 }
 
 extension API: TargetType {
@@ -44,9 +44,10 @@ extension API: TargetType {
 
     var task: Task {
         switch self {
-        case .searchMovie(let query):
+        case .searchMovie(let query, let pageIndex):
             return .requestParameters(parameters: [
                 "s" : query,
+                "page": pageIndex,
                 "apikey": Environment.apiKey
             ], encoding: URLEncoding.queryString)
         case .getMovie(let movieID):
